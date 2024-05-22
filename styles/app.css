@@ -1,14 +1,55 @@
 @font-face {
-    font-family: 'Vazirmatn-VariableFont_wght';
+    font-family: Vazirmatn-Medium;
     font-style: normal;
-    src: url('fonts/Vazirmatn/Vazirmatn-VariableFont_wght.ttf') format('ttf');
+    src: url('../fonts/Vazirmatn-Medium.ttf') format('ttf');
+    src: url('../fonts/Vazirmatn-Medium.woff2') format('woff2');
+
 }
-*{
+*,
+*::after,
+*::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    font-family: 'Vazirmatn-VariableFont_wght';
+    font-family: 'Vazirmatn-Medium', serif;
+}
+.header{
+
+}
+
+.header__row1{
+    width: 100%;
+    background-color: #00003c;
+    height: 120px;
+
+}
+.site-container {
+    margin: 0 auto;
+    position: relative;
+}
+.header__logo{
+    background: url("../images/1200 (1).gif") no-repeat;
+}
+.header__dates{
+    color: #fff;
+    position: absolute;
+    left: 139px;
+    top: 50px;
+    text-align: left;
+}
+.header__fa-date{
+    font-size: 12px;
+    height: 21px;
+    overflow: hidden;
+    padding-left: 3px;
+}
+.header__en-date{
+    font-size: 12px;
+    height: 21px;
+    overflow: hidden;
+    padding-left: 3px;
+
 }

@@ -1,0 +1,27 @@
+@media (min-width: 1200px) {
+    .site-container {
+        width: 1200px;
+    }
+}
+@media (max-width: 1199px) {
+    header__logo{
+        background: url("../images/970.gif") no-repeat center !important;
+    }
+    .site-container {
+        width: 970px;
+    }
+}
+@media (max-width: 991px) {
+    .site-container {
+        width: 750px;
+    }
+    header__logo{
+        background: url("../images/750.gif") no-repeat center !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-container {
+        width: 450px;
+    }
+}
