@@ -3,8 +3,14 @@
         width: 1200px;
     }
 }
+@media (width: 1200px) {
+    .site-container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
 @media (max-width: 1199px) {
-    header__logo{
+    .header__logo{
         background: url("../images/970.gif") no-repeat center !important;
     }
     .site-container {
@@ -15,9 +21,22 @@
     .site-container {
         width: 750px;
     }
-    header__logo{
+    .header__logo{
         background: url("../images/750.gif") no-repeat center !important;
     }
+    .header__menu-item {
+        padding: unset !important;
+        border: none;
+    }
+    .header__menu-item span {
+        font-size: 10px;
+        border-left: 1px solid #dbdbdb;
+        padding: 0 6px !important;
+    }
+    .snn-tv-link img {
+        height: 22px !important;
+    }
+
 }
 
 @media (max-width: 768px) {

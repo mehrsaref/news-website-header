@@ -1,10 +1,83 @@
 @font-face {
-    font-family: Vazirmatn-Medium;
-    font-style: normal;
-    src: url('../fonts/Vazirmatn-Medium.ttf') format('ttf');
-    src: url('../fonts/Vazirmatn-Medium.woff2') format('woff2');
-
+    font-family: 'IRANSans';
+    src: url("../fonts/IRANSans.woff2") format('woff2');
+    font-weight: 500
 }
+@font-face {
+    font-family: 'IRANSans-Bold';
+    src: url("../fonts/IRANSans-Bold.woff2") format('woff2');
+    font-weight: 700
+}
+
+/*@font-face {*/
+/*    font-family: 'nassim-bold';*/
+/*    src: url('/client/themes/fa/main/fonts/nassim-bold.eot');*/
+/*    src: url('/client/themes/fa/main/fonts/nassim-bold.eot?#') format('eot'),url('/client/themes/fa/main/fonts/nassim-bold.woff') format('woff'),url('/client/themes/fa/main/fonts/nassim-bold.ttf') format('truetype')*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'RTNassim';*/
+/*    src: url('/client/themes/fa/main/fonts/RTNassim.eot');*/
+/*    src: url('/client/themes/fa/main/fonts/RTNassim.eot?#') format('eot'),url('/client/themes/fa/main/fonts/RTNassim.woff') format('woff'),url('/client/themes/fa/main/fonts/RTNassim.ttf') format('truetype')*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Yekan';*/
+/*    src: url('/client/themes/fa/main/fonts/Yekan.eot');*/
+/*    src: url('/client/themes/fa/main/fonts/Yekan.eot?#') format('eot'),url('/client/themes/fa/main/fonts/Yekan.woff') format('woff'),url('/client/themes/fa/main/fonts/Yekan.ttf') format('truetype')*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'IRANSansLight';*/
+/*    src: url('/client/themes/fa/main/fonts/IRANSansWeb_Light.eot');*/
+/*    src: url('/client/themes/fa/main/fonts/IRANSansWeb_Light.eot?#iefix') format('eot'),url('/client/themes/fa/main/fonts/IRANSansWeb_Light.woff2') format('woff2'),url('/client/themes/fa/main/fonts/IRANSansWeb_Light.woff') format('woff'),url('/client/themes/fa/main/fonts/IRANSansWeb_Light.ttf') format('ttf');*/
+/*    font-weight: 300*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'IRANSans';*/
+/*    src: url('/client/themes/fa/main/fonts/IRANSansWeb.eot');*/
+/*    src: url('/client/themes/fa/main/fonts/IRANSansWeb.eot?#iefix') format('eot'),url('/client/themes/fa/main/fonts/IRANSansWeb.woff2') format('woff2'),url('/client/themes/fa/main/fonts/IRANSansWeb.woff') format('woff'),url('/client/themes/fa/main/fonts/IRANSansWeb.ttf') format('ttf');*/
+/*    font-weight: 400*/
+/*}*/
+
+@font-face {
+    font-family: 'IRANSansMedium';
+    src: url('/client/themes/fa/main/fonts/IRANSansWeb_Medium.eot');
+    src: url('/client/themes/fa/main/fonts/IRANSansWeb_Medium.eot?#iefix') format('eot'),url('/client/themes/fa/main/fonts/IRANSansWeb_Medium.woff2') format('woff2');
+    font-weight: 500
+}
+
+@font-face {
+    font-family: 'IRANSansBold';
+    src: url('/client/themes/fa/main/fonts/IRANSansWeb_Bold.eot');
+    src: url('/client/themes/fa/main/fonts/IRANSansWeb_Bold.eot?#iefix') format('eot'),url('/client/themes/fa/main/fonts/IRANSansWeb_Bold.woff2') format('woff2');
+    font-weight: 700
+}
+
+
+a {
+    color: #1809a6;
+    outline: none
+}
+
+a:hover {
+    color: #da0a18;
+    text-decoration: none !important
+}
+
+a:active {
+    color: #000
+}
+
+li{
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
 *,
 *::after,
 *::before{
@@ -14,24 +87,27 @@
 }
 
 body{
-    font-family: 'Vazirmatn-Medium', serif;
+    font-family: 'IRANSans';
+    font-weight: 400;
+
 }
+
 .header{
-
+    background-color: #00003c;
 }
-
 .header__row1{
     width: 100%;
-    background-color: #00003c;
     height: 120px;
 
 }
 .site-container {
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
     position: relative;
 }
 .header__logo{
     background: url("../images/1200 (1).gif") no-repeat;
+    height: 120px;
 }
 .header__dates{
     color: #fff;
@@ -52,4 +128,48 @@ body{
     overflow: hidden;
     padding-left: 3px;
 
+}
+.header__menu{
+    /*border-top: 0.1px solid #cacaca;*/
+    height: 37px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+.header__menu-items{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header__menu-items li:first-child a{
+    padding-right: 16px;
+}
+.header__menu-items li:last-child a {
+    border: none;
+}
+
+.header__menu-item a{
+    border-left: 1px solid #dbdbdb;
+    color: #fff;
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    padding: 0 12px 0 13px;
+    position: relative;
+    z-index: 100;
+}
+.header__menu-item a span{
+    font-family: 'IRANSans-Bold';
+    font-size: 14px;
+    text-wrap: nowrap;
+}
+
+.snn-tv-link{
+    margin-left: 6px !important;
+    margin-bottom: 6px;
+}
+.snn-tv-link img{
+    height: 27px;
 }
