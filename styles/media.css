@@ -4,9 +4,9 @@
     }
 }
 @media (width: 1200px) {
-    .site-container {
-        padding-left: 5px;
+    .navbar__container {
         padding-right: 5px;
+        padding-left: 5px;
     }
 }
 @media (max-width: 1199px) {
@@ -16,6 +16,18 @@
     .site-container {
         width: 970px;
     }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .navbar__item a {
+        line-height: 2;
+        padding: unset !important;
+        border: unset !important;
+    }
+    .navbar__item a span {
+        border-left: 1px solid #dbdbdb;
+        padding: 0 6px !important;
+    }
 }
 @media (max-width: 991px) {
     .site-container {
@@ -24,21 +36,34 @@
     .header__logo{
         background: url("../images/750.gif") no-repeat center !important;
     }
-    .header__menu-item {
+    .navbar__item {
         padding: unset !important;
         border: none;
     }
-    .header__menu-item span {
+    .navbar__item a span {
         font-size: 10px;
         border-left: 1px solid #dbdbdb;
         padding: 0 6px !important;
     }
-    .snn-tv-link img {
+    .navbar__tv-link img {
         height: 22px !important;
     }
 
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar__menu li:first-child a {
+        padding: unset !important;
+    }
+    .navbar__menu li a {
+        padding: unset !important;
+    }
+    .navbar__item a {
+        font-size: 10px !important;
+        padding: unset !important;
+        border: unset !important;
+    }
+}
 @media (max-width: 768px) {
     .site-container {
         width: 450px;
