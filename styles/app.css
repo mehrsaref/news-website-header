@@ -165,9 +165,6 @@ body{
 .navbar__tv-link img{
     height: 27px;
 }
-/*.navbar__sub-menu{*/
-/*    height: fit-content;*/
-/*}*/
 
 /*.navbar__sub-menu1,*/
 /*.navbar__sub-menu2*/
@@ -181,12 +178,15 @@ body{
     overflow: hidden;
     transition: height 0.5s;
     transition-delay: 3s;
+    z-index: 1;
 }
 
 .sub-menu__link {
+    /*display: none;*/
     padding: 0 23px 0 4px;
     font-size: 12px;
     color: #000 ;
+    z-index: 1;
 }
 .sub-menu__link:hover{
     color: #d10000;
@@ -207,9 +207,6 @@ body{
     transition: height 0.5s;
 }
 
-.navbar__sub-menu1 :active .navbar__sub-menu2{
-    transition: none;
-}
 
 
 
