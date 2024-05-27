@@ -19,12 +19,12 @@
 
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .navbar__item a {
+    .subnav a {
         line-height: 2;
         padding: unset !important;
         border: unset !important;
     }
-    .navbar__item a span {
+    .subnav a span {
         border-left: 1px solid #dbdbdb;
         padding: 0 6px !important;
     }
@@ -36,11 +36,11 @@
     .header__logo{
         background: url("../images/750.gif") no-repeat center !important;
     }
-    .navbar__item {
+    .subnav {
         padding: unset !important;
         border: none;
     }
-    .navbar__item a span {
+    .subnav a span {
         font-size: 10px;
         border-left: 1px solid #dbdbdb;
         padding: 0 6px !important;
@@ -58,7 +58,7 @@
     .navbar__menu li a {
         padding: unset !important;
     }
-    .navbar__item a {
+    .subnav a {
         font-size: 10px !important;
         padding: unset !important;
         border: unset !important;
