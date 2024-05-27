@@ -167,16 +167,15 @@ body{
 
 
 .subnav__content{
-    background-color: #dbdbdb;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    z-index: 1;
     display: none;
-    /*height: 0;*/
-    /*transition: height 0.5s;*/
-    /*transition-delay: 3s;*/
+    /*visibility: hidden;*/
+    position: absolute;
+    top: 160px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    min-height: 40px;
+    /*transition: visibility 1s;*/
 }
 
 .subnav__link {
@@ -189,14 +188,30 @@ body{
     color: #d10000;
     cursor: pointer;
 }
-
+.subnav{
+    height: 50px;
+}
 .subnav:hover .subnav__content{
     display: block;
     z-index: 100;
-    /*height: 48px !important;*/
-    /*transition: height 0.5s;*/
+    /*visibility: visible;*/
 }
+.subnav__bg{
+    background-color: #dbdbdb;
+    position: absolute;
+    left: 0;
+    top: 160px;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s;
+    transition-delay: 1s;
+}
+.navbar__menu:hover .subnav__bg{
+    height: 50px !important;
+    transition: height 0.5s;
 
+}
 
 
 
