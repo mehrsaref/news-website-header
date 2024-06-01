@@ -94,10 +94,14 @@ body{
     display: none;
 }
 .mobile-nav__left-wrapper:has(.mobile-nav__checkbox:checked) + .mobile-nav__menu{
-    display: block;
+    /*display: block;*/
+    height: 355px;
+    transition: height 0.5s;
 }
 .mobile-nav__menu{
-    display: none;
+    /*display: none;*/
+    height: 0;
+    transition: height 0.5s;
     overflow: scroll;
     background-color: #00003c;
     position: absolute;
