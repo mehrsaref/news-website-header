@@ -20,7 +20,7 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .site-container {
-        width: 750px;
+        width: 970px;
     }
     .subnav button {
         line-height: 2;
@@ -53,6 +53,9 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .site-container {
+        width: 750px;
+    }
     .navbar__menu div:first-child button {
         padding: unset !important;
     }
