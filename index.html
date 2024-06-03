@@ -11,26 +11,23 @@
     <title>SNN</title>
 </head>
 <body>
-    <nav class="mobile-nav">
-        <div class="site-container">
-            <div class="mobile-nav__wrapper">
-                <a class="mobile-nav__logo-link"><img src="images/snn_logo.png"></a>
-                <div class="mobile-nav__left-wrapper">
-                    <a class="mobile-nav__tv-link"><img src="images/snn_TV.png"></a>
-                    <input class="mobile-nav__checkbox" type="checkbox" id="bars-checkbox" hidden>
-                    <label for="bars-checkbox">
-                        <i class="nav__open-icon fa fa-bars" style="font-size:28px; color: white; padding: 10px; margin: 0 5px 7px 6px"></i>
-                        <i class="nav__close-icon fa fa-2x-mbtn fa-close" style="display: none; font-size:30px; color: white; padding: 10px; margin: 0 5px 7px 6px"></i>
+    <section class="header__mobile">
+            <div class="header__mobile--wrapper site-container">
+                <a class="mobile__logo"><img src="images/snn_logo.png"></a>
+                <div class="mobile__menu">
+                    <a class="mobile__menu--tv"><img src="images/snn_TV.png"></a>
+                    <input class="mobile__menu--icon" type="checkbox" id="menu--icons" hidden>
+                    <label for="menu--icons">
+                        <i class="menu__open-icon fa fa-bars" style="font-size:28px; color: white; padding: 10px; margin: 0 5px 7px 6px"></i>
+                        <i class="menu__close-icon fa fa-close" style="display: none; font-size:30px; color: white; padding: 10px; margin: 0 5px 7px 6px"></i>
                     </label>
                 </div>
-                <div class="mobile-nav__menu">
-                    <div class="mobile-nav__searchbox-parent">
-                        <div class="mobile-nav__searchbox">
-                            <input class="" type="text" placeholder="جستجو">
-                            <a><i class="fa fa-search" style="font-size: 18px"></i></a>
-                        </div>
+                <div class="mobile--nav">
+                    <div class="mobile--nav__searchbox">
+                        <input type="text" placeholder="جستجو">
+                        <a><i class="fa fa-search" style="font-size: 18px"></i></a>
                     </div>
-                    <div class="mobile-nav__social-links">
+                    <div class="mobile--nav__social--links">
                         <a><i class="fa fa-youtube-play" style="font-size: 35px; color: #fff;"></i></a>
                         <a><i class="fa fa-telegram" style="font-size: 35px; color: #fff;"></i></a>
                         <a><i class="fa fa-instagram" style="font-size: 35px; color: #fff;"></i></a>
@@ -41,432 +38,412 @@
                         <a><i class="fa fa-twitter" style="font-size: 35px; color: #fff;"></i></a>
                         <a><i class="fa fa-youtube-play" style="font-size: 35px; color: #fff;"></i></a>
                     </div>
-                    <ul class="mobile-nav__list">
-                        <li class="mobile-subnav">
-                            <input type="checkbox" class="mobile-subnav__checkbox" id="subnav__checkbox" hidden>
+                    <ul class="mobile--nav__list">
+                        <li class="mobile--subnav">
+                            <input type="checkbox" class="mobile--subnav__item" id="subnav__checkbox" hidden>
                             <label for="subnav__checkbox">
                                 صفحه نخست
                                 <i class="fa fa-angle-down subnav-down-icon" style="color: #fff; font-size: 24px; font-weight: 700;"></i>
                                 <i class="fa fa-angle-up subnav-up-icon" style=" display: none; color: #fff; font-size: 24px; font-weight: 700;"></i>
                             </label>
-                            <div class="mobile-subnav__content">
-                                <a class="mobile-subnav__link">عناوین کل اخبار</a>
+                            <div class="mobile--subnav__content">
+                                <a>عناوین کل اخبار</a>
                             </div>
                         </li>
-                        <li class="mobile-subnav">
-                            <input type="checkbox" class="mobile-subnav__checkbox" id="subnav__checkbox1" hidden>
+                        <li class="mobile--subnav">
+                            <input type="checkbox" class="mobile--subnav__item" id="subnav__checkbox1" hidden>
                             <label for="subnav__checkbox1">
                                 پخش زنده
                                 <i class="fa fa-angle-down subnav-down-icon" style="color: #fff; font-size: 24px; font-weight: 700;"></i>
                                 <i class="fa fa-angle-up subnav-up-icon" style=" display: none; color: #fff; font-size: 24px; font-weight: 700;"></i>
                             </label>
-                            <div class="mobile-subnav__content">
-                                <a class="mobile-subnav__link">نشست های خبری</a>
-                                <a class="mobile-subnav__link">مناظرات</a>
-                                <a class="mobile-subnav__link">سخنرانی ها</a>
-                                <a class="mobile-subnav__link">گفتگوها</a>
-                                <a class="mobile-subnav__link">تجمعات</a>
-                                <a class="mobile-subnav__link">سایر</a>
+                            <div class="mobile--subnav__content">
+                                <a>نشست های خبری</a>
+                                <a>مناظرات</a>
+                                <a>سخنرانی ها</a>
+                                <a>گفتگوها</a>
+                                <a>تجمعات</a>
+                                <a>سایر</a>
                             </div>
                         </li>
-                        <li class="mobile-subnav">
-                            <input type="checkbox" class="mobile-subnav__checkbox" id="subnav__checkbox2" hidden>
+                        <li class="mobile--subnav">
+                            <input type="checkbox" class="mobile--subnav__item" id="subnav__checkbox2" hidden>
                             <label for="subnav__checkbox2">
                                 دانشگاه
                                 <i class="fa fa-angle-down subnav-down-icon" style="color: #fff; font-size: 24px; font-weight: 700;"></i>
                                 <i class="fa fa-angle-up subnav-up-icon" style=" display: none; color: #fff; font-size: 24px; font-weight: 700;"></i>
                             </label>
-                            <div class="mobile-subnav__content">
-                                <div class="site-container">
-                                    <a class="mobile-subnav__link">تشکل‌های دانشگاهی</a>
-                                    <a class="mobile-subnav__link">صنفی و دانشجویی</a>
-                                    <a class="mobile-subnav__link">آموزش و پژوهش</a>
-                                    <a class="mobile-subnav__link">نشریات دانشجویی</a>
-                                    <a class="mobile-subnav__link">یادداشت دانشجویی</a>
-                                    <a class="mobile-subnav__link">دانش و فناوری</a>
-                                    <a class="mobile-subnav__link">ارتباطات</a>
-                                </div>
+                            <div class="mobile--subnav__content">
+                                    <a>تشکل‌های دانشگاهی</a>
+                                    <a>صنفی و دانشجویی</a>
+                                    <a>آموزش و پژوهش</a>
+                                    <a>نشریات دانشجویی</a>
+                                    <a>یادداشت دانشجویی</a>
+                                    <a>دانش و فناوری</a>
+                                    <a>ارتباطات</a>
                             </div>
                         </li>
-                        <li class="mobile-subnav">
-                            <input type="checkbox" class="mobile-subnav__checkbox" id="subnav__checkbox3" hidden>
+                        <li class="mobile--subnav">
+                            <input type="checkbox" class="mobile--subnav__item" id="subnav__checkbox3" hidden>
                             <label for="subnav__checkbox3">
                                 استان‌ها
                                 <i class="fa fa-angle-down subnav-down-icon" style="color: #fff; font-size: 24px; font-weight: 700;"></i>
                                 <i class="fa fa-angle-up subnav-up-icon" style=" display: none; color: #fff; font-size: 24px; font-weight: 700;"></i>
                             </label>
-                            <div class="mobile-subnav__content">
-                                <div class="site-container">
-                                    <a class="mobile-subnav__link">اصفهان</a>
-                                    <a class="mobile-subnav__link">تهران</a>
-                                    <a class="mobile-subnav__link">یزد</a>
-                                    <a class="mobile-subnav__link">همدان</a>
-                                </div>
+                            <div class="mobile--subnav__content">
+                                    <a>اصفهان</a>
+                                    <a>تهران</a>
+                                    <a>یزد</a>
+                                    <a>همدان</a>
                             </div>
                         </li>
-                        <li class="mobile-subnav">
-                            <input type="checkbox" class="mobile-subnav__checkbox" id="subnav__checkbox4" hidden>
+                        <li class="mobile--subnav">
+                            <input type="checkbox" class="mobile--subnav__item" id="subnav__checkbox4" hidden>
                             <label for="subnav__checkbox4">
                                 سیاسی
                                 <i class="fa fa-angle-down subnav-down-icon" style="color: #fff; font-size: 24px; font-weight: 700;"></i>
                                 <i class="fa fa-angle-up subnav-up-icon" style=" display: none; color: #fff; font-size: 24px; font-weight: 700;"></i>
                             </label>
-                            <div class="mobile-subnav__content">
-                                <div class="site-container">
-                                    <a class="mobile-subnav__link">احزاب و شخصیت‌ها</a>
-                                    <a class="mobile-subnav__link">بین الملل</a>
-                                    <a class="mobile-subnav__link">رهبری</a>
-                                    <a class="mobile-subnav__link">امنیتی و دفاعی</a>
-                                    <a class="mobile-subnav__link">دولت</a>
-                                    <a class="mobile-subnav__link">مجلس</a>
-                                    <a class="mobile-subnav__link">سیاست خارجی</a>
-                                    <a class="mobile-subnav__link">سایر حوزه ها</a>
-                                    <a class="mobile-subnav__link">دیگر رسانه‌ها</a>
-                                </div>
+                            <div class="mobile--subnav__content">
+                                    <a>احزاب و شخصیت‌ها</a>
+                                    <a>بین الملل</a>
+                                    <a>رهبری</a>
+                                    <a>امنیتی و دفاعی</a>
+                                    <a>دولت</a>
+                                    <a>مجلس</a>
+                                    <a>سیاست خارجی</a>
+                                    <a>سایر حوزه ها</a>
+                                    <a>دیگر رسانه‌ها</a>
                             </div>
                         </li>
-                        <li class="mobile-subnav">
-                            <input type="checkbox" class="mobile-subnav__checkbox" id="subnav__checkbox5" hidden>
+                        <li class="mobile--subnav">
+                            <input type="checkbox" class="mobile--subnav__item" id="subnav__checkbox5" hidden>
                             <label for="subnav__checkbox5">
                                 فرهنگی
                                 <i class="fa fa-angle-down subnav-down-icon" style="color: #fff; font-size: 24px; font-weight: 700;"></i>
                                 <i class="fa fa-angle-up subnav-up-icon" style=" display: none; color: #fff; font-size: 24px; font-weight: 700;"></i>
                             </label>
-                            <div class="mobile-subnav__content">
-                                <div class="site-container">
-                                    <a class="mobile-subnav__link">سینما و تئاتر</a>
-                                    <a class="mobile-subnav__link">رادیو و تلویزیون</a>
-                                    <a class="mobile-subnav__link">موسیقی</a>
-                                    <a class="mobile-subnav__link">شعر و ادبیات</a>
-                                    <a class="mobile-subnav__link">کتاب</a>
-                                    <a class="mobile-subnav__link">دین و اندیشه</a>
-                                    <a class="mobile-subnav__link">مقاومت و پایداری</a>
-                                    <a class="mobile-subnav__link">سایر حوزه ها</a>
-                                </div>
+                            <div class="mobile--subnav__content">
+                                    <a>سینما و تئاتر</a>
+                                    <a>رادیو و تلویزیون</a>
+                                    <a>موسیقی</a>
+                                    <a>شعر و ادبیات</a>
+                                    <a>کتاب</a>
+                                    <a>دین و اندیشه</a>
+                                    <a>مقاومت و پایداری</a>
+                                    <a>سایر حوزه ها</a>
                             </div>
                         </li>
-                        <li class="mobile-subnav">
-                            <input type="checkbox" class="mobile-subnav__checkbox" id="subnav__checkbox6" hidden>
+                        <li class="mobile--subnav">
+                            <input type="checkbox" class="mobile--subnav__item" id="subnav__checkbox6" hidden>
                             <label for="subnav__checkbox6">
                                 اقتصادی
                                 <i class="fa fa-angle-down subnav-down-icon" style="color: #fff; font-size: 24px; font-weight: 700;"></i>
                                 <i class="fa fa-angle-up subnav-up-icon" style=" display: none; color: #fff; font-size: 24px; font-weight: 700;"></i>
                             </label>
-                            <div class="mobile-subnav__content">
-                                <div class="site-container">
-                                    <a class="mobile-subnav__link">اقتصاد کلان و بودجه</a>
-                                    <a class="mobile-subnav__link">اقتصاد سیاسی</a>
-                                    <a class="mobile-subnav__link">صنعت، معدن و تجارت</a>
-                                    <a class="mobile-subnav__link">راه و شهرسازی</a>
-                                    <a class="mobile-subnav__link">نفت و انرژی</a>
-                                    <a class="mobile-subnav__link">بورس، بیمه و بانک</a>
-                                    <a class="mobile-subnav__link">کشاورزی و تعاون</a>
-                                    <a class="mobile-subnav__link">اقتصاد بین‌الملل</a>
-                                    <a class="mobile-subnav__link">مبارزه با فساد</a>
-                                    <a class="mobile-subnav__link">بازرگانی</a>
-                                    <a class="mobile-subnav__link">سایر حوزه ها</a>
-                                </div>
+                            <div class="mobile--subnav__content">
+                                    <a>اقتصاد کلان و بودجه</a>
+                                    <a>اقتصاد سیاسی</a>
+                                    <a>صنعت، معدن و تجارت</a>
+                                    <a>راه و شهرسازی</a>
+                                    <a>نفت و انرژی</a>
+                                    <a>بورس، بیمه و بانک</a>
+                                    <a>کشاورزی و تعاون</a>
+                                    <a>اقتصاد بین‌الملل</a>
+                                    <a>مبارزه با فساد</a>
+                                    <a>بازرگانی</a>
+                                    <a>سایر حوزه ها</a>
                             </div>
                         </li>
-                        <li class="mobile-subnav">
-                            <input type="checkbox" class="mobile-subnav__checkbox" id="subnav__checkbox7" hidden>
+                        <li class="mobile--subnav">
+                            <input type="checkbox" class="mobile--subnav__item" id="subnav__checkbox7" hidden>
                             <label for="subnav__checkbox7">
                                 اجتماعی
                                 <i class="fa fa-angle-down subnav-down-icon" style="color: #fff; font-size: 24px; font-weight: 700;"></i>
                                 <i class="fa fa-angle-up subnav-up-icon" style=" display: none; color: #fff; font-size: 24px; font-weight: 700;"></i>
                             </label>
-                            <div class="mobile-subnav__content">
-                                <div class="site-container">
-                                    <a class="mobile-subnav__link">جامعه</a>
-                                    <a class="mobile-subnav__link">سلامت</a>
-                                    <a class="mobile-subnav__link">حوادث</a>
-                                    <a class="mobile-subnav__link">قضایی و انتظامی</a>
-                                    <a class="mobile-subnav__link">شهری</a>
-                                    <a class="mobile-subnav__link">آموزش و پرورش</a>
-                                    <a class="mobile-subnav__link">محیط زیست</a>
-                                    <a class="mobile-subnav__link">سایر حوزه ها</a>
-                                </div>
+                            <div class="mobile--subnav__content">
+                                    <a>جامعه</a>
+                                    <a>سلامت</a>
+                                    <a>حوادث</a>
+                                    <a>قضایی و انتظامی</a>
+                                    <a>شهری</a>
+                                    <a>آموزش و پرورش</a>
+                                    <a>محیط زیست</a>
+                                    <a>سایر حوزه ها</a>
                             </div>
                         </li>
-                        <li class="mobile-subnav">
-                            <input type="checkbox" class="mobile-subnav__checkbox" id="subnav__checkbox8" hidden>
+                        <li class="mobile--subnav">
+                            <input type="checkbox" class="mobile--subnav__item" id="subnav__checkbox8" hidden>
                             <label for="subnav__checkbox8">
                                 ورزشی
                                 <i class="fa fa-angle-down subnav-down-icon" style="color: #fff; font-size: 24px; font-weight: 700;"></i>
                                 <i class="fa fa-angle-up subnav-up-icon" style=" display: none; color: #fff; font-size: 24px; font-weight: 700;"></i>
                             </label>
-                            <div class="mobile-subnav__content">
-                                <div class="site-container">
-                                    <a class="mobile-subnav__link">جام ملت های آسیا 2023</a>
-                                    <a class="mobile-subnav__link">فوتبال ایران</a>
-                                    <a class="mobile-subnav__link">فوتبال جهان</a>
-                                    <a class="mobile-subnav__link">ورزش جهان</a>
-                                    <a class="mobile-subnav__link">ورزش بانوان</a>
-                                    <a class="mobile-subnav__link">کشتی و وزنه برداری</a>
-                                    <a class="mobile-subnav__link">رزمی</a>
-                                    <a class="mobile-subnav__link">توپ و تور</a>
-                                    <a class="mobile-subnav__link">سایر حوزه ها</a>
-                                </div>
+                            <div class="mobile--subnav__content">
+                                    <a>جام ملت های آسیا 2023</a>
+                                    <a>فوتبال ایران</a>
+                                    <a>فوتبال جهان</a>
+                                    <a>ورزش جهان</a>
+                                    <a>ورزش بانوان</a>
+                                    <a>کشتی و وزنه برداری</a>
+                                    <a>رزمی</a>
+                                    <a>توپ و تور</a>
+                                    <a>سایر حوزه ها</a>
                             </div>
                         </li>
-                        <li class="mobile-subnav">
-                            <input type="checkbox" class="mobile-subnav__checkbox" id="subnav__checkbox9" hidden>
+                        <li class="mobile--subnav">
+                            <input type="checkbox" class="mobile--subnav__item" id="subnav__checkbox9" hidden>
                             <label for="subnav__checkbox9">
                                 عکس
                                 <i class="fa fa-angle-down subnav-down-icon" style="color: #fff; font-size: 24px; font-weight: 700;"></i>
                                 <i class="fa fa-angle-up subnav-up-icon" style=" display: none; color: #fff; font-size: 24px; font-weight: 700;"></i>
                             </label>
-                            <div class="mobile-subnav__content">
-                                <div class="site-container">
-                                    <a class="mobile-subnav__link">عکس خبری</a>
-                                    <a class="mobile-subnav__link">عکس مستند</a>
-                                    <a class="mobile-subnav__link">گرافیک و کاریکاتور</a>
-                                </div>
+                            <div class="mobile--subnav__content">
+                                    <a>عکس خبری</a>
+                                    <a>عکس مستند</a>
+                                    <a>گرافیک و کاریکاتور</a>
                             </div>
                         </li>
-                        <li class="mobile-subnav">
-                            <input type="checkbox" class="mobile-subnav__checkbox" id="subnav__checkbox10" hidden>
+                        <li class="mobile--subnav">
+                            <input type="checkbox" class="mobile--subnav__item" id="subnav__checkbox10" hidden>
                             <label for="subnav__checkbox10">
                                 فیلم
                                 <i class="fa fa-angle-down subnav-down-icon" style="color: #fff; font-size: 24px; font-weight: 700;"></i>
                                 <i class="fa fa-angle-up subnav-up-icon" style=" display: none; color: #fff; font-size: 24px; font-weight: 700;"></i>
                             </label>
-                            <div class="mobile-subnav__content">
-                                <div class="site-container">
-                                    <a class="mobile-subnav__link">فیلم</a>
-                                    <a class="mobile-subnav__link">دکتر سلام</a>
-                                    <a class="mobile-subnav__link">صوت</a>
-                                    <a class="mobile-subnav__link">مستند</a>
-                                </div>
+                            <div class="mobile--subnav__content">
+                                    <a>فیلم</a>
+                                    <a>دکتر سلام</a>
+                                    <a>صوت</a>
+                                    <a>مستند</a>
                             </div>
                         </li>
-                        <li class="mobile-subnav">
-                            <input type="checkbox" class="mobile-subnav__checkbox" id="subnav__checkbox11" hidden>
+                        <li class="mobile--subnav">
+                            <input type="checkbox" class="mobile--subnav__item" id="subnav__checkbox11" hidden>
                             <label for="subnav__checkbox11">
                                 برنامه ها
                                 <i class="fa fa-angle-down subnav-down-icon" style="color: #fff; font-size: 24px; font-weight: 700;"></i>
                                 <i class="fa fa-angle-up subnav-up-icon" style=" display: none; color: #fff; font-size: 24px; font-weight: 700;"></i>
                             </label>
-                            <div class="mobile-subnav__content">
-                                <div class="site-container">
-                                    <a class="mobile-subnav__link">دادستان</a>
-                                    <a class="mobile-subnav__link">راه روشن</a>
-                                    <a class="mobile-subnav__link">گرا</a>
-                                    <a class="mobile-subnav__link">بیت مقدس</a>
-                                    <a class="mobile-subnav__link">مدار</a>
-                                    <a class="mobile-subnav__link">سوت پایان</a>
-                                    <a class="mobile-subnav__link">شاخص</a>
-                                    <a class="mobile-subnav__link">اصل ۳۱</a>
-                                    <a class="mobile-subnav__link">پرونده تاریخ</a>
-                                    <a class="mobile-subnav__link">۱۶ آذر</a>
-                                    <a class="mobile-subnav__link">میز نقد</a>
-                                    <a class="mobile-subnav__link">بهارستان ۱۲</a>
-                                </div>
+                            <div class="mobile--subnav__content">
+                                    <a>دادستان</a>
+                                    <a>راه روشن</a>
+                                    <a>گرا</a>
+                                    <a>بیت مقدس</a>
+                                    <a>مدار</a>
+                                    <a>سوت پایان</a>
+                                    <a>شاخص</a>
+                                    <a>اصل ۳۱</a>
+                                    <a>پرونده تاریخ</a>
+                                    <a>۱۶ آذر</a>
+                                    <a>میز نقد</a>
+                                    <a>بهارستان ۱۲</a>
                             </div>
                         </li>
-                        <div class="mobile-nav__menu-footer">
-                            <a><img src="images/5.gif"></a>
-                            <a><img src="images/4.gif"></a>
-                            <a><img src="images/3.gif"></a>
-                            <a><img src="images/2.gif"></a>
-                            <a><img src="images/1.gif"></a>
-                        </div>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <header class="header">
-        <div class="header__top">
-            <div class="site-container">
-                <div class="header__logo">
-                    <div class="header__dates">
-                        <div class="header__fa-date">چهارشنبه ۰۲ خرداد ۱۴۰۳</div>
-                        <div class="header__en-date">Wednesday 22 May 2024</div>
+                    <div class="mobile--nav__other--links">
+                        <a><img src="images/5.gif"></a>
+                        <a><img src="images/4.gif"></a>
+                        <a><img src="images/3.gif"></a>
+                        <a><img src="images/2.gif"></a>
+                        <a><img src="images/1.gif"></a>
                     </div>
                 </div>
             </div>
-        </div>
-        <nav class="navbar">
-            <div class="navbar__bottom-border"></div>
-            <div class="site-container navbar__container">
-                <div class="navbar__wrapper">
-                    <div class="navbar__menu">
-                        <div class="subnav__bg"></div>
-                        <div class="subnav subnav-1">
-                            <button class="subnav__btn">
-                                <span>صفحه نخست</span></button>
-                            <div class="subnav__content">
-                                <div class="site-container">
-                                    <a class="subnav__link">عناوین کل اخبار</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="subnav">
-                            <button class="subnav__btn "><span>پخش زنده</span></button>
-                            <div class="subnav__content">
-                                <div class="site-container">
-                                    <a class="subnav__link">نشست های خبری</a>
-                                    <a class="subnav__link">مناظرات</a>
-                                    <a class="subnav__link">سخنرانی ها</a>
-                                    <a class="subnav__link">گفتگوها</a>
-                                    <a class="subnav__link">تجمعات</a>
-                                    <a class="subnav__link">سایر</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="subnav">
-                            <button class="subnav__btn "><span>دانشگاه</span></button>
-                            <div class="subnav__content">
-                                <div class="site-container">
-                                    <a class="subnav__link">تشکل‌های دانشگاهی</a>
-                                    <a class="subnav__link">صنفی و دانشجویی</a>
-                                    <a class="subnav__link">آموزش و پژوهش</a>
-                                    <a class="subnav__link">نشریات دانشجویی</a>
-                                    <a class="subnav__link">یادداشت دانشجویی</a>
-                                    <a class="subnav__link">دانش و فناوری</a>
-                                    <a class="subnav__link">ارتباطات</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="subnav">
-                            <button class="subnav__btn "><span>استان‌ها</span></button>
-                            <div class="subnav__content">
-                                <div class="site-container">
-                                    <a class="subnav__link">اصفهان</a>
-                                    <a class="subnav__link">تهران</a>
-                                    <a class="subnav__link">یزد</a>
-                                    <a class="subnav__link">همدان</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="subnav">
-                            <button class="subnav__btn "><span>سیاسی</span></button>
-                            <div class="subnav__content">
-                                <div class="site-container">
-                                    <a class="subnav__link">احزاب و شخصیت‌ها</a>
-                                    <a class="subnav__link">بین الملل</a>
-                                    <a class="subnav__link">رهبری</a>
-                                    <a class="subnav__link">امنیتی و دفاعی</a>
-                                    <a class="subnav__link">دولت</a>
-                                    <a class="subnav__link">مجلس</a>
-                                    <a class="subnav__link">سیاست خارجی</a>
-                                    <a class="subnav__link">سایر حوزه ها</a>
-                                    <a class="subnav__link">دیگر رسانه‌ها</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="subnav">
-                            <button class="subnav__btn "><span>فرهنگی</span></button>
-                            <div class="subnav__content">
-                                <div class="site-container">
-                                    <a class="subnav__link">سینما و تئاتر</a>
-                                    <a class="subnav__link">رادیو و تلویزیون</a>
-                                    <a class="subnav__link">موسیقی</a>
-                                    <a class="subnav__link">شعر و ادبیات</a>
-                                    <a class="subnav__link">کتاب</a>
-                                    <a class="subnav__link">دین و اندیشه</a>
-                                    <a class="subnav__link">مقاومت و پایداری</a>
-                                    <a class="subnav__link">سایر حوزه ها</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="subnav subnav-economy">
-                            <button class="subnav__btn"><span>اقتصادی</span></button>
-                            <div class="subnav__content subnav__content-lg">
-                                <div class="site-container">
-                                    <a class="subnav__link">اقتصاد کلان و بودجه</a>
-                                    <a class="subnav__link">اقتصاد سیاسی</a>
-                                    <a class="subnav__link">صنعت، معدن و تجارت</a>
-                                    <a class="subnav__link">راه و شهرسازی</a>
-                                    <a class="subnav__link">نفت و انرژی</a>
-                                    <a class="subnav__link">بورس، بیمه و بانک</a>
-                                    <a class="subnav__link">کشاورزی و تعاون</a>
-                                    <a class="subnav__link">اقتصاد بین‌الملل</a>
-                                    <a class="subnav__link">مبارزه با فساد</a>
-                                    <a class="subnav__link">بازرگانی</a>
-                                    <a class="subnav__link">سایر حوزه ها</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="subnav">
-                            <button class="subnav__btn "><span>اجتماعی</span></button>
-                            <div class="subnav__content">
-                                <div class="site-container">
-                                    <a class="subnav__link">جامعه</a>
-                                    <a class="subnav__link">سلامت</a>
-                                    <a class="subnav__link">حوادث</a>
-                                    <a class="subnav__link">قضایی و انتظامی</a>
-                                    <a class="subnav__link">شهری</a>
-                                    <a class="subnav__link">آموزش و پرورش</a>
-                                    <a class="subnav__link">محیط زیست</a>
-                                    <a class="subnav__link">سایر حوزه ها</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="subnav">
-                            <button class="subnav__btn "><span>ورزشی</span></button>
-                            <div class="subnav__content">
-                                <div class="site-container">
-                                    <a class="subnav__link">جام ملت های آسیا 2023</a>
-                                    <a class="subnav__link">فوتبال ایران</a>
-                                    <a class="subnav__link">فوتبال جهان</a>
-                                    <a class="subnav__link">ورزش جهان</a>
-                                    <a class="subnav__link">ورزش بانوان</a>
-                                    <a class="subnav__link">کشتی و وزنه برداری</a>
-                                    <a class="subnav__link">رزمی</a>
-                                    <a class="subnav__link">توپ و تور</a>
-                                    <a class="subnav__link">سایر حوزه ها</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="subnav">
-                            <button class="subnav__btn "><span>عکس</span></button>
-                            <div class="subnav__content">
-                                <div class="site-container">
-                                    <a class="subnav__link">عکس خبری</a>
-                                    <a class="subnav__link">عکس مستند</a>
-                                    <a class="subnav__link">گرافیک و کاریکاتور</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="subnav">
-                            <button class="subnav__btn "><span>فیلم</span></button>
-                            <div class="subnav__content">
-                                <div class="site-container">
-                                    <a class="subnav__link">فیلم</a>
-                                    <a class="subnav__link">دکتر سلام</a>
-                                    <a class="subnav__link">صوت</a>
-                                    <a class="subnav__link">مستند</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="subnav">
-                            <button class="subnav__btn "><span>برنامه ها</span></button>
-                            <div class="subnav__content">
-                                <div class="site-container">
-                                    <a class="subnav__link">دادستان</a>
-                                    <a class="subnav__link">راه روشن</a>
-                                    <a class="subnav__link">گرا</a>
-                                    <a class="subnav__link">بیت مقدس</a>
-                                    <a class="subnav__link">مدار</a>
-                                    <a class="subnav__link">سوت پایان</a>
-                                    <a class="subnav__link">شاخص</a>
-                                    <a class="subnav__link">اصل ۳۱</a>
-                                    <a class="subnav__link">پرونده تاریخ</a>
-                                    <a class="subnav__link">۱۶ آذر</a>
-                                    <a class="subnav__link">میز نقد</a>
-                                    <a class="subnav__link">بهارستان ۱۲</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </section>
 
-                    <a class="navbar__tv-link"><img src="images/snn_TV.png"></a>
+<!--    <header class="header">-->
+<!--        <div class="header__top">-->
+<!--            <div class="site-container">-->
+<!--                <div class="header__logo">-->
+<!--                    <div class="header__dates">-->
+<!--                        <div class="header__fa-date">چهارشنبه ۰۲ خرداد ۱۴۰۳</div>-->
+<!--                        <div class="header__en-date">Wednesday 22 May 2024</div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <nav class="navbar">-->
+<!--            <div class="navbar__bottom-border"></div>-->
+<!--            <div class="site-container navbar__container">-->
+<!--                <div class="navbar__wrapper">-->
+<!--                    <div class="navbar__menu">-->
+<!--                        <div class="subnav__bg"></div>-->
+<!--                        <div class="subnav subnav-1">-->
+<!--                            <button class="subnav__btn">-->
+<!--                                <span>صفحه نخست</span></button>-->
+<!--                            <div class="subnav__content">-->
+<!--                                <div class="site-container">-->
+<!--                                    <a class="subnav__link">عناوین کل اخبار</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="subnav">-->
+<!--                            <button class="subnav__btn "><span>پخش زنده</span></button>-->
+<!--                            <div class="subnav__content">-->
+<!--                                <div class="site-container">-->
+<!--                                    <a class="subnav__link">نشست های خبری</a>-->
+<!--                                    <a class="subnav__link">مناظرات</a>-->
+<!--                                    <a class="subnav__link">سخنرانی ها</a>-->
+<!--                                    <a class="subnav__link">گفتگوها</a>-->
+<!--                                    <a class="subnav__link">تجمعات</a>-->
+<!--                                    <a class="subnav__link">سایر</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="subnav">-->
+<!--                            <button class="subnav__btn "><span>دانشگاه</span></button>-->
+<!--                            <div class="subnav__content">-->
+<!--                                <div class="site-container">-->
+<!--                                    <a class="subnav__link">تشکل‌های دانشگاهی</a>-->
+<!--                                    <a class="subnav__link">صنفی و دانشجویی</a>-->
+<!--                                    <a class="subnav__link">آموزش و پژوهش</a>-->
+<!--                                    <a class="subnav__link">نشریات دانشجویی</a>-->
+<!--                                    <a class="subnav__link">یادداشت دانشجویی</a>-->
+<!--                                    <a class="subnav__link">دانش و فناوری</a>-->
+<!--                                    <a class="subnav__link">ارتباطات</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="subnav">-->
+<!--                            <button class="subnav__btn "><span>استان‌ها</span></button>-->
+<!--                            <div class="subnav__content">-->
+<!--                                <div class="site-container">-->
+<!--                                    <a class="subnav__link">اصفهان</a>-->
+<!--                                    <a class="subnav__link">تهران</a>-->
+<!--                                    <a class="subnav__link">یزد</a>-->
+<!--                                    <a class="subnav__link">همدان</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="subnav">-->
+<!--                            <button class="subnav__btn "><span>سیاسی</span></button>-->
+<!--                            <div class="subnav__content">-->
+<!--                                <div class="site-container">-->
+<!--                                    <a class="subnav__link">احزاب و شخصیت‌ها</a>-->
+<!--                                    <a class="subnav__link">بین الملل</a>-->
+<!--                                    <a class="subnav__link">رهبری</a>-->
+<!--                                    <a class="subnav__link">امنیتی و دفاعی</a>-->
+<!--                                    <a class="subnav__link">دولت</a>-->
+<!--                                    <a class="subnav__link">مجلس</a>-->
+<!--                                    <a class="subnav__link">سیاست خارجی</a>-->
+<!--                                    <a class="subnav__link">سایر حوزه ها</a>-->
+<!--                                    <a class="subnav__link">دیگر رسانه‌ها</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="subnav">-->
+<!--                            <button class="subnav__btn "><span>فرهنگی</span></button>-->
+<!--                            <div class="subnav__content">-->
+<!--                                <div class="site-container">-->
+<!--                                    <a class="subnav__link">سینما و تئاتر</a>-->
+<!--                                    <a class="subnav__link">رادیو و تلویزیون</a>-->
+<!--                                    <a class="subnav__link">موسیقی</a>-->
+<!--                                    <a class="subnav__link">شعر و ادبیات</a>-->
+<!--                                    <a class="subnav__link">کتاب</a>-->
+<!--                                    <a class="subnav__link">دین و اندیشه</a>-->
+<!--                                    <a class="subnav__link">مقاومت و پایداری</a>-->
+<!--                                    <a class="subnav__link">سایر حوزه ها</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="subnav subnav-economy">-->
+<!--                            <button class="subnav__btn"><span>اقتصادی</span></button>-->
+<!--                            <div class="subnav__content subnav__content-lg">-->
+<!--                                <div class="site-container">-->
+<!--                                    <a class="subnav__link">اقتصاد کلان و بودجه</a>-->
+<!--                                    <a class="subnav__link">اقتصاد سیاسی</a>-->
+<!--                                    <a class="subnav__link">صنعت، معدن و تجارت</a>-->
+<!--                                    <a class="subnav__link">راه و شهرسازی</a>-->
+<!--                                    <a class="subnav__link">نفت و انرژی</a>-->
+<!--                                    <a class="subnav__link">بورس، بیمه و بانک</a>-->
+<!--                                    <a class="subnav__link">کشاورزی و تعاون</a>-->
+<!--                                    <a class="subnav__link">اقتصاد بین‌الملل</a>-->
+<!--                                    <a class="subnav__link">مبارزه با فساد</a>-->
+<!--                                    <a class="subnav__link">بازرگانی</a>-->
+<!--                                    <a class="subnav__link">سایر حوزه ها</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="subnav">-->
+<!--                            <button class="subnav__btn "><span>اجتماعی</span></button>-->
+<!--                            <div class="subnav__content">-->
+<!--                                <div class="site-container">-->
+<!--                                    <a class="subnav__link">جامعه</a>-->
+<!--                                    <a class="subnav__link">سلامت</a>-->
+<!--                                    <a class="subnav__link">حوادث</a>-->
+<!--                                    <a class="subnav__link">قضایی و انتظامی</a>-->
+<!--                                    <a class="subnav__link">شهری</a>-->
+<!--                                    <a class="subnav__link">آموزش و پرورش</a>-->
+<!--                                    <a class="subnav__link">محیط زیست</a>-->
+<!--                                    <a class="subnav__link">سایر حوزه ها</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="subnav">-->
+<!--                            <button class="subnav__btn "><span>ورزشی</span></button>-->
+<!--                            <div class="subnav__content">-->
+<!--                                <div class="site-container">-->
+<!--                                    <a class="subnav__link">جام ملت های آسیا 2023</a>-->
+<!--                                    <a class="subnav__link">فوتبال ایران</a>-->
+<!--                                    <a class="subnav__link">فوتبال جهان</a>-->
+<!--                                    <a class="subnav__link">ورزش جهان</a>-->
+<!--                                    <a class="subnav__link">ورزش بانوان</a>-->
+<!--                                    <a class="subnav__link">کشتی و وزنه برداری</a>-->
+<!--                                    <a class="subnav__link">رزمی</a>-->
+<!--                                    <a class="subnav__link">توپ و تور</a>-->
+<!--                                    <a class="subnav__link">سایر حوزه ها</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="subnav">-->
+<!--                            <button class="subnav__btn "><span>عکس</span></button>-->
+<!--                            <div class="subnav__content">-->
+<!--                                <div class="site-container">-->
+<!--                                    <a class="subnav__link">عکس خبری</a>-->
+<!--                                    <a class="subnav__link">عکس مستند</a>-->
+<!--                                    <a class="subnav__link">گرافیک و کاریکاتور</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="subnav">-->
+<!--                            <button class="subnav__btn "><span>فیلم</span></button>-->
+<!--                            <div class="subnav__content">-->
+<!--                                <div class="site-container">-->
+<!--                                    <a class="subnav__link">فیلم</a>-->
+<!--                                    <a class="subnav__link">دکتر سلام</a>-->
+<!--                                    <a class="subnav__link">صوت</a>-->
+<!--                                    <a class="subnav__link">مستند</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="subnav">-->
+<!--                            <button class="subnav__btn "><span>برنامه ها</span></button>-->
+<!--                            <div class="subnav__content">-->
+<!--                                <div class="site-container">-->
+<!--                                    <a class="subnav__link">دادستان</a>-->
+<!--                                    <a class="subnav__link">راه روشن</a>-->
+<!--                                    <a class="subnav__link">گرا</a>-->
+<!--                                    <a class="subnav__link">بیت مقدس</a>-->
+<!--                                    <a class="subnav__link">مدار</a>-->
+<!--                                    <a class="subnav__link">سوت پایان</a>-->
+<!--                                    <a class="subnav__link">شاخص</a>-->
+<!--                                    <a class="subnav__link">اصل ۳۱</a>-->
+<!--                                    <a class="subnav__link">پرونده تاریخ</a>-->
+<!--                                    <a class="subnav__link">۱۶ آذر</a>-->
+<!--                                    <a class="subnav__link">میز نقد</a>-->
+<!--                                    <a class="subnav__link">بهارستان ۱۲</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
-                </div>
-            </div>
-        </nav>
-    </header>
+<!--                    <a class="navbar__tv-link"><img src="images/snn_TV.png"></a>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </nav>-->
+<!--    </header>-->
 </body>
 </html>

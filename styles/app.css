@@ -10,32 +10,24 @@
     src: url("../fonts/IRANSans-Bold.woff2") format('woff2');
     font-weight: 700;
 }
-
-
-
-a {
+a{
     text-decoration: none;
     color: #1809a6;
     outline: none
 }
-
-a:hover {
+a:hover{
     color: #da0a18;
     text-decoration: none !important
 }
-
-a:active {
+a:active{
     color: #000
 }
-
 li{
     list-style: none;
 }
-
-img {
+img{
     vertical-align: middle;
 }
-
 *,
 *::after,
 *::before{
@@ -43,167 +35,164 @@ img {
     padding: 0;
     box-sizing: border-box;
 }
-body * {
-    direction: rtl;
-}
-
 body{
-    font-family: 'IRANSans';
+    direction: rtl;
+    font-family: 'IRANSans', serif;
     font-weight: 400;
-
 }
 .site-container{
     margin-right: auto;
     margin-left: auto;
 }
-.mobile-nav{
+.header__mobile{
     display: none;
     width: 100%;
     height: 52px;
     background-color: #00003c;
-}
-.mobile-nav__wrapper{
-    height: 57px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-.mobile-nav__logo-link img{
-    margin-top: 4px;
-    margin-right: 10px;
-    width: 85%;
-    height: 40px;
-}
-.mobile-nav__left-wrapper{
-    display: flex;
-}
-.mobile-nav__tv-link{
-    height: fit-content;
-    padding: 0;
-    border: 0;
-    margin: 10px 3px 6px 6px;
-}
-.mobile-nav__tv-link img {
-    height: 27px;
-}
-.mobile-nav__checkbox:checked +label .nav__close-icon{
-    display: block !important;
-}
-.mobile-nav__checkbox:checked +label .nav__open-icon{
-    display: none;
-}
-.mobile-nav__left-wrapper:has(.mobile-nav__checkbox:checked) + .mobile-nav__menu{
-    /*display: block;*/
-    height: 355px;
-    transition: height 0.5s;
-}
-.mobile-nav__menu{
-    /*display: none;*/
-    height: 0;
-    transition: height 0.5s;
-    overflow: scroll;
-    background-color: #00003c;
-    position: absolute;
-    width: 100%;
-    max-height: 360px;
-    z-index: 999;
-    top: 48px;
-}
-.mobile-nav__searchbox-parent{
-    margin-top: 8px;
-    padding: 10px 10px 9px;
-    width: 100%;
+    .header__mobile--wrapper{
+        height: 57px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        .mobile__logo{
+            img{
+                margin-top: 4px;
+                margin-right: 10px;
+                width: 85%;
+                height: 40px;
+            }
+        }
+        .mobile__menu{
+            display: flex;
+            .mobile__menu--tv{
+                height: fit-content;
+                padding: 0;
+                border: 0;
+                margin: 10px 3px 6px 6px;
+                img{
+                    height: 27px;
+                }
+            }
+            .mobile__menu--icon{
+            }
+            label{
+                .menu__open-icon{}
+                .menu__close-icon{}
+            }
+            .mobile__menu--icon:checked +label .menu__close-icon{
+                display: block !important;
+            }
+            .mobile__menu--icon:checked +label .menu__open-icon{
+                display: none;
+            }
 
-}
-.mobile-nav__searchbox{
-    width: 100%;
-    background-color: #fff;
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 35px;
-}
-.mobile-nav__searchbox input{
-    color: #000;
-    font: 13px / 30px iranSans;
-    height: 33px;
-    width: 90%;
-    border: none;
-    outline: none;
-    margin-right: 17px;
-    margin-left: 2px;
-    border-left: 1px solid #00003c;
-}
-.mobile-nav__searchbox a{
-    text-align: center;
-    align-content: center;
-    width: 35px;
-    height: 35px;
-}
-.mobile-nav__social-links{
-    text-align: left;
-    width: 100%;
-    margin: 0 auto;
-    height: 121px;
-}
-.mobile-nav__social-links a{
-    text-align: center;
-    display: block;
-    float: left;
-    width: 16.66%;
-    padding: 6px 0 0;
-    height: 35px;
-    margin: 9px 0;
-}
-.mobile-subnav{
-    border-top: 1px solid #fff;
-    padding: 5px 0;
-}
-.mobile-subnav label{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    font-family: 'IRANSans-Bold', serif;
-    font-size: 17px;
-    color: #fff;
-    border: none;
-    outline: none;
-    background-color: #00003c;
-    width: 100%;
-    padding: 0 15px;
-}
-.mobile-subnav__content{
-    display: none;
-    padding: 5px;
-}
-
-.mobile-subnav__link{
-    text-wrap: nowrap;
-    padding: 5px 15px 5px 25px;
-    color: #fff;
-    font-family: IRANSans-Bold;
-    font-size: 14px;
-}
-.mobile-subnav__checkbox:checked ~ .mobile-subnav__content{
-    display: block;
-}
-.mobile-subnav__checkbox:checked +label .subnav-down-icon{
-    display: none;
-}
-.mobile-subnav__checkbox:checked +label .subnav-up-icon{
-    display: block !important;
-}
-.mobile-nav__menu-footer{
-    border-top: 1px solid #fff;
-    padding: 10px 20px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 15px;
+        }
+        .mobile__menu:has(.mobile__menu--icon:checked) + .mobile--nav{
+            height: 360px;
+            transition: height 0.5s;
+        }
+        .mobile--nav{
+            height: 0;
+            transition: height 0.5s;
+            overflow: scroll;
+            background-color: #00003c;
+            position: absolute;
+            width: 100%;
+            top: 48px;
+            .mobile--nav__searchbox{
+                margin: 18px 10px;
+                background-color: #fff;
+                border-radius: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 35px;
+                input{
+                    color: #000;
+                    font: 13px iranSans;
+                    height: 33px;
+                    width: 90%;
+                    border: none;
+                    outline: none;
+                    margin-right: 17px;
+                    margin-left: 2px;
+                    border-left: 1px solid #00003c;
+                }
+                a{
+                    text-align: center;
+                    align-content: center;
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+            .mobile--nav__social--links{
+                text-align: left;
+                width: 100%;
+                margin: 0 auto;
+                height: 121px;
+                a{
+                    text-align: center;
+                    display: block;
+                    float: left;
+                    width: 16.66%;
+                    padding: 6px 0 0;
+                    height: 35px;
+                    margin: 9px 0;
+                }
+            }
+            .mobile--nav__list{
+                .mobile--subnav{
+                    border-top: 1px solid #fff;
+                    padding: 5px 0;
+                    .mobile--subnav__item{}
+                    label{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        position: relative;
+                        font-family: 'IRANSans-Bold', serif;
+                        font-size: 17px;
+                        color: #fff;
+                        border: none;
+                        outline: none;
+                        background-color: #00003c;
+                        width: 100%;
+                        padding: 0 15px;
+                    }
+                    .mobile--subnav__content{
+                        display: none;
+                        padding: 5px;
+                        a{
+                            text-wrap: nowrap;
+                            padding: 5px 15px 5px 25px;
+                            color: #fff;
+                            font-family: IRANSans-Bold, serif;
+                            font-size: 14px;
+                        }
+                    }
+                    .mobile--subnav__item:checked ~ .mobile--subnav__content{
+                        display: block;
+                    }
+                    .mobile--subnav__item:checked +label .subnav-down-icon{
+                        display: none;
+                    }
+                    .mobile--subnav__item:checked +label .subnav-up-icon{
+                        display: block !important;
+                    }
+                }
+            }
+            .mobile--nav__other--links{
+                border-top: 1px solid #fff;
+                padding: 10px 20px;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+    }
 }
 .header{
     background-color: #00003c;
@@ -254,8 +243,6 @@ body{
     right: 0;
     top: 157px;
     background: #cacaca;
-    background: linear-gradient(to bottom, rgba(202, 202, 202, 1) 0%, rgba(219, 219, 219, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca',endColorstr='#dbdbdb',GradientType=0);
 }
 .navbar__wrapper{
     width: 100%;
