@@ -3,86 +3,51 @@
         width: 1200px;
     }
 }
-@media (width: 1200px) {
-    .navbar__container {
-        padding-right: 5px;
-        padding-left: 5px;
+@media (max-width: 1199px) {
+    .desktop--subnav__btn {
+        padding: 0 6px !important;
     }
 }
-@media (max-width: 1199px) {
-    .header__logo{
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .desktop--logo{
         background: url("../images/970.gif") no-repeat center !important;
     }
     .site-container {
         width: 970px;
     }
-
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .site-container {
-        width: 970px;
-    }
-    .subnav button {
-        line-height: 2;
-        padding: unset !important;
-        border: unset !important;
-    }
-    .subnav button span {
-        border-left: 1px solid #dbdbdb;
-        padding: 0 6px !important;
-    }
 }
 @media (max-width: 991px) {
-
-    .header__logo{
-        background: url("../images/750.gif") no-repeat center !important;
-    }
-    .subnav {
-        padding: unset !important;
-        border: none;
-    }
-    .subnav button span {
-        font-size: 10px;
-        border-left: 1px solid #dbdbdb;
-        padding: 0 6px !important;
-    }
-    .navbar__tv-link img {
-        height: 22px !important;
+    .desktop--nav__tv-link img {
+        height: 22px;
     }
 
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .site-container {
-        width: 750px;
-    }
-    .navbar__menu div:first-child button {
-        padding: unset !important;
-    }
-    .subnav__btn {
-        padding: unset !important;
-    }
-    .subnav button {
-        font-size: 10px !important;
-        padding: unset !important;
-        border: unset !important;
+    .desktop--logo{
+        background: url("../images/750.gif") no-repeat center !important;
     }
     .site-container {
         width: 750px;
+    }
+    .desktop--subnav__btn {
+        font-size: 11px !important;
+    }
+    .desktop--nav__items:hover .desktop--subnav__background{
+        height: 80px !important;
+        transition: height 0.5s;
+
     }
 }
 
 @media only screen and (max-width: 767px) {
-    .header{
+    .header__desktop{
         display: none;
     }
     .header__mobile{
-        display: block;
+        display: block !important;
     }
-    .mobile__logo{
-        width: 200px;
-        height: 50px;
-    }
+
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -90,8 +55,18 @@
         width: 450px;
     }
 }
-@media (min-width: 375px) and (max-width: 479px) {
+@media (min-width: 370px) and (max-width: 479px) {
     .site-container{
-        width: 350px;
+        width: 370px;
+    }
+    .menu__open-icon{
+        padding: 10px 5px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 369px) {
+    .mobile__logo{
+        width: 160px !important;
+        height: 40px !important;
     }
 }

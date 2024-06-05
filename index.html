@@ -11,6 +11,7 @@
     <title>SNN</title>
 </head>
 <body>
+<header class="header">
     <section class="header__mobile">
             <div class="header__mobile--wrapper site-container">
                 <a class="mobile__logo"><img src="images/snn_logo.png"></a>
@@ -18,11 +19,11 @@
                     <a class="mobile__menu--tv"><img src="images/snn_TV.png"></a>
                     <input class="mobile__menu--icon" type="checkbox" id="menu--icons" hidden>
                     <label for="menu--icons">
-                        <i class="menu__open-icon fa fa-bars" style="font-size:28px; color: white; padding: 10px; margin: 0 5px 7px 6px"></i>
-                        <i class="menu__close-icon fa fa-close" style="display: none; font-size:30px; color: white; padding: 10px; margin: 0 5px 7px 6px"></i>
+                        <i class="menu__open-icon fa fa-bars"></i>
+                        <i class="menu__close-icon fa fa-close"></i>
                     </label>
                 </div>
-                <div class="mobile--nav">
+                <nav class="mobile--nav">
                     <div class="mobile--nav__searchbox">
                         <input type="text" placeholder="جستجو">
                         <a><i class="fa fa-search" style="font-size: 18px"></i></a>
@@ -249,201 +250,170 @@
                         <a><img src="images/2.gif"></a>
                         <a><img src="images/1.gif"></a>
                     </div>
-                </div>
+                </nav>
             </div>
     </section>
-
-<!--    <header class="header">-->
-<!--        <div class="header__top">-->
-<!--            <div class="site-container">-->
-<!--                <div class="header__logo">-->
-<!--                    <div class="header__dates">-->
-<!--                        <div class="header__fa-date">چهارشنبه ۰۲ خرداد ۱۴۰۳</div>-->
-<!--                        <div class="header__en-date">Wednesday 22 May 2024</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <nav class="navbar">-->
-<!--            <div class="navbar__bottom-border"></div>-->
-<!--            <div class="site-container navbar__container">-->
-<!--                <div class="navbar__wrapper">-->
-<!--                    <div class="navbar__menu">-->
-<!--                        <div class="subnav__bg"></div>-->
-<!--                        <div class="subnav subnav-1">-->
-<!--                            <button class="subnav__btn">-->
-<!--                                <span>صفحه نخست</span></button>-->
-<!--                            <div class="subnav__content">-->
-<!--                                <div class="site-container">-->
-<!--                                    <a class="subnav__link">عناوین کل اخبار</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="subnav">-->
-<!--                            <button class="subnav__btn "><span>پخش زنده</span></button>-->
-<!--                            <div class="subnav__content">-->
-<!--                                <div class="site-container">-->
-<!--                                    <a class="subnav__link">نشست های خبری</a>-->
-<!--                                    <a class="subnav__link">مناظرات</a>-->
-<!--                                    <a class="subnav__link">سخنرانی ها</a>-->
-<!--                                    <a class="subnav__link">گفتگوها</a>-->
-<!--                                    <a class="subnav__link">تجمعات</a>-->
-<!--                                    <a class="subnav__link">سایر</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="subnav">-->
-<!--                            <button class="subnav__btn "><span>دانشگاه</span></button>-->
-<!--                            <div class="subnav__content">-->
-<!--                                <div class="site-container">-->
-<!--                                    <a class="subnav__link">تشکل‌های دانشگاهی</a>-->
-<!--                                    <a class="subnav__link">صنفی و دانشجویی</a>-->
-<!--                                    <a class="subnav__link">آموزش و پژوهش</a>-->
-<!--                                    <a class="subnav__link">نشریات دانشجویی</a>-->
-<!--                                    <a class="subnav__link">یادداشت دانشجویی</a>-->
-<!--                                    <a class="subnav__link">دانش و فناوری</a>-->
-<!--                                    <a class="subnav__link">ارتباطات</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="subnav">-->
-<!--                            <button class="subnav__btn "><span>استان‌ها</span></button>-->
-<!--                            <div class="subnav__content">-->
-<!--                                <div class="site-container">-->
-<!--                                    <a class="subnav__link">اصفهان</a>-->
-<!--                                    <a class="subnav__link">تهران</a>-->
-<!--                                    <a class="subnav__link">یزد</a>-->
-<!--                                    <a class="subnav__link">همدان</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="subnav">-->
-<!--                            <button class="subnav__btn "><span>سیاسی</span></button>-->
-<!--                            <div class="subnav__content">-->
-<!--                                <div class="site-container">-->
-<!--                                    <a class="subnav__link">احزاب و شخصیت‌ها</a>-->
-<!--                                    <a class="subnav__link">بین الملل</a>-->
-<!--                                    <a class="subnav__link">رهبری</a>-->
-<!--                                    <a class="subnav__link">امنیتی و دفاعی</a>-->
-<!--                                    <a class="subnav__link">دولت</a>-->
-<!--                                    <a class="subnav__link">مجلس</a>-->
-<!--                                    <a class="subnav__link">سیاست خارجی</a>-->
-<!--                                    <a class="subnav__link">سایر حوزه ها</a>-->
-<!--                                    <a class="subnav__link">دیگر رسانه‌ها</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="subnav">-->
-<!--                            <button class="subnav__btn "><span>فرهنگی</span></button>-->
-<!--                            <div class="subnav__content">-->
-<!--                                <div class="site-container">-->
-<!--                                    <a class="subnav__link">سینما و تئاتر</a>-->
-<!--                                    <a class="subnav__link">رادیو و تلویزیون</a>-->
-<!--                                    <a class="subnav__link">موسیقی</a>-->
-<!--                                    <a class="subnav__link">شعر و ادبیات</a>-->
-<!--                                    <a class="subnav__link">کتاب</a>-->
-<!--                                    <a class="subnav__link">دین و اندیشه</a>-->
-<!--                                    <a class="subnav__link">مقاومت و پایداری</a>-->
-<!--                                    <a class="subnav__link">سایر حوزه ها</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="subnav subnav-economy">-->
-<!--                            <button class="subnav__btn"><span>اقتصادی</span></button>-->
-<!--                            <div class="subnav__content subnav__content-lg">-->
-<!--                                <div class="site-container">-->
-<!--                                    <a class="subnav__link">اقتصاد کلان و بودجه</a>-->
-<!--                                    <a class="subnav__link">اقتصاد سیاسی</a>-->
-<!--                                    <a class="subnav__link">صنعت، معدن و تجارت</a>-->
-<!--                                    <a class="subnav__link">راه و شهرسازی</a>-->
-<!--                                    <a class="subnav__link">نفت و انرژی</a>-->
-<!--                                    <a class="subnav__link">بورس، بیمه و بانک</a>-->
-<!--                                    <a class="subnav__link">کشاورزی و تعاون</a>-->
-<!--                                    <a class="subnav__link">اقتصاد بین‌الملل</a>-->
-<!--                                    <a class="subnav__link">مبارزه با فساد</a>-->
-<!--                                    <a class="subnav__link">بازرگانی</a>-->
-<!--                                    <a class="subnav__link">سایر حوزه ها</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="subnav">-->
-<!--                            <button class="subnav__btn "><span>اجتماعی</span></button>-->
-<!--                            <div class="subnav__content">-->
-<!--                                <div class="site-container">-->
-<!--                                    <a class="subnav__link">جامعه</a>-->
-<!--                                    <a class="subnav__link">سلامت</a>-->
-<!--                                    <a class="subnav__link">حوادث</a>-->
-<!--                                    <a class="subnav__link">قضایی و انتظامی</a>-->
-<!--                                    <a class="subnav__link">شهری</a>-->
-<!--                                    <a class="subnav__link">آموزش و پرورش</a>-->
-<!--                                    <a class="subnav__link">محیط زیست</a>-->
-<!--                                    <a class="subnav__link">سایر حوزه ها</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="subnav">-->
-<!--                            <button class="subnav__btn "><span>ورزشی</span></button>-->
-<!--                            <div class="subnav__content">-->
-<!--                                <div class="site-container">-->
-<!--                                    <a class="subnav__link">جام ملت های آسیا 2023</a>-->
-<!--                                    <a class="subnav__link">فوتبال ایران</a>-->
-<!--                                    <a class="subnav__link">فوتبال جهان</a>-->
-<!--                                    <a class="subnav__link">ورزش جهان</a>-->
-<!--                                    <a class="subnav__link">ورزش بانوان</a>-->
-<!--                                    <a class="subnav__link">کشتی و وزنه برداری</a>-->
-<!--                                    <a class="subnav__link">رزمی</a>-->
-<!--                                    <a class="subnav__link">توپ و تور</a>-->
-<!--                                    <a class="subnav__link">سایر حوزه ها</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="subnav">-->
-<!--                            <button class="subnav__btn "><span>عکس</span></button>-->
-<!--                            <div class="subnav__content">-->
-<!--                                <div class="site-container">-->
-<!--                                    <a class="subnav__link">عکس خبری</a>-->
-<!--                                    <a class="subnav__link">عکس مستند</a>-->
-<!--                                    <a class="subnav__link">گرافیک و کاریکاتور</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="subnav">-->
-<!--                            <button class="subnav__btn "><span>فیلم</span></button>-->
-<!--                            <div class="subnav__content">-->
-<!--                                <div class="site-container">-->
-<!--                                    <a class="subnav__link">فیلم</a>-->
-<!--                                    <a class="subnav__link">دکتر سلام</a>-->
-<!--                                    <a class="subnav__link">صوت</a>-->
-<!--                                    <a class="subnav__link">مستند</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="subnav">-->
-<!--                            <button class="subnav__btn "><span>برنامه ها</span></button>-->
-<!--                            <div class="subnav__content">-->
-<!--                                <div class="site-container">-->
-<!--                                    <a class="subnav__link">دادستان</a>-->
-<!--                                    <a class="subnav__link">راه روشن</a>-->
-<!--                                    <a class="subnav__link">گرا</a>-->
-<!--                                    <a class="subnav__link">بیت مقدس</a>-->
-<!--                                    <a class="subnav__link">مدار</a>-->
-<!--                                    <a class="subnav__link">سوت پایان</a>-->
-<!--                                    <a class="subnav__link">شاخص</a>-->
-<!--                                    <a class="subnav__link">اصل ۳۱</a>-->
-<!--                                    <a class="subnav__link">پرونده تاریخ</a>-->
-<!--                                    <a class="subnav__link">۱۶ آذر</a>-->
-<!--                                    <a class="subnav__link">میز نقد</a>-->
-<!--                                    <a class="subnav__link">بهارستان ۱۲</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                    <a class="navbar__tv-link"><img src="images/snn_TV.png"></a>-->
-
-<!--                </div>-->
-<!--            </div>-->
-<!--        </nav>-->
-<!--    </header>-->
+    <section class="header__desktop">
+        <div class="desktop--logo site-container">
+            <div class="desktop__dates">
+                <div>چهارشنبه ۰۲ خرداد ۱۴۰۳</div>
+                <div>Wednesday 22 May 2024</div>
+            </div>
+        </div>
+        <nav class="desktop--nav">
+            <div class="desktop--nav__border"></div>
+            <div class="desktop--nav__wrapper site-container">
+                <ul class="desktop--nav__items">
+                    <li class="desktop--subnav">
+                        <button class="desktop--subnav__btn">صفحه نخست</button>
+                        <div class="desktop--subnav__content  site-container">
+                            <a>عناوین کل اخبار</a>
+                        </div>
+                    </li>
+                    <li class="desktop--subnav">
+                        <button class="desktop--subnav__btn">پخش زنده</button>
+                        <div class="desktop--subnav__content  site-container">
+                            <a>نشست های خبری</a>
+                            <a>مناظرات</a>
+                            <a>سخنرانی ها</a>
+                            <a>گفتگوها</a>
+                            <a>تجمعات</a>
+                            <a>سایر</a>
+                        </div>
+                    </li>
+                    <li class="desktop--subnav">
+                        <button class="desktop--subnav__btn">دانشگاه</button>
+                        <div class="desktop--subnav__content  site-container">
+                            <a>تشکل‌های دانشگاهی</a>
+                            <a>صنفی و دانشجویی</a>
+                            <a>آموزش و پژوهش</a>
+                            <a>نشریات دانشجویی</a>
+                            <a>یادداشت دانشجویی</a>
+                            <a>دانش و فناوری</a>
+                            <a>ارتباطات</a>
+                        </div>
+                    </li>
+                    <li class="desktop--subnav">
+                        <button class="desktop--subnav__btn">استان‌ها</button>
+                        <div class="desktop--subnav__content  site-container">
+                            <a>اصفهان</a>
+                            <a>تهران</a>
+                            <a>یزد</a>
+                            <a>همدان</a>
+                        </div>
+                    </li>
+                    <li class="desktop--subnav">
+                        <button class="desktop--subnav__btn">سیاسی</button>
+                        <div class="desktop--subnav__content  site-container">
+                            <a>احزاب و شخصیت‌ها</a>
+                            <a>بین الملل</a>
+                            <a>رهبری</a>
+                            <a>امنیتی و دفاعی</a>
+                            <a>دولت</a>
+                            <a>مجلس</a>
+                            <a>سیاست خارجی</a>
+                            <a>سایر حوزه ها</a>
+                            <a>دیگر رسانه‌ها</a>
+                        </div>
+                    </li>
+                    <li class="desktop--subnav">
+                        <button class="desktop--subnav__btn">فرهنگی</button>
+                        <div class="desktop--subnav__content  site-container">
+                            <a>سینما و تئاتر</a>
+                            <a>رادیو و تلویزیون</a>
+                            <a>موسیقی</a>
+                            <a>شعر و ادبیات</a>
+                            <a>کتاب</a>
+                            <a>دین و اندیشه</a>
+                            <a>مقاومت و پایداری</a>
+                            <a>سایر حوزه ها</a>
+                        </div>
+                    </li>
+                    <li class="desktop--subnav">
+                        <button class="desktop--subnav__btn">اقتصادی</button>
+                        <div class="desktop--subnav__content">
+                            <div class="site-container">
+                                <a>اقتصاد کلان و بودجه</a>
+                                <a>اقتصاد سیاسی</a>
+                                <a>صنعت، معدن و تجارت</a>
+                                <a>راه و شهرسازی</a>
+                                <a>نفت و انرژی</a>
+                                <a>بورس، بیمه و بانک</a>
+                                <a>کشاورزی و تعاون</a>
+                                <a>اقتصاد بین‌الملل</a>
+                                <a>مبارزه با فساد</a>
+                                <a>بازرگانی</a>
+                                <a>سایر حوزه ها</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="desktop--subnav">
+                        <button class="desktop--subnav__btn">اجتماعی</button>
+                        <div class="desktop--subnav__content  site-container">
+                            <a>جامعه</a>
+                            <a>سلامت</a>
+                            <a>حوادث</a>
+                            <a>قضایی و انتظامی</a>
+                            <a>شهری</a>
+                            <a>آموزش و پرورش</a>
+                            <a>محیط زیست</a>
+                            <a>سایر حوزه ها</a>
+                        </div>
+                    </li>
+                    <li class="desktop--subnav">
+                        <button class="desktop--subnav__btn">ورزشی</button>
+                        <div class="desktop--subnav__content  site-container">
+                            <a>جام ملت های آسیا 2023</a>
+                            <a>فوتبال ایران</a>
+                            <a>فوتبال جهان</a>
+                            <a>ورزش جهان</a>
+                            <a>ورزش بانوان</a>
+                            <a>کشتی و وزنه برداری</a>
+                            <a>رزمی</a>
+                            <a>توپ و تور</a>
+                            <a>سایر حوزه ها</a>
+                        </div>
+                    </li>
+                    <li class="desktop--subnav">
+                        <button class="desktop--subnav__btn">عکس</button>
+                        <div class="desktop--subnav__content  site-container">
+                            <a>عکس خبری</a>
+                            <a>عکس مستند</a>
+                            <a>گرافیک و کاریکاتور</a>
+                        </div>
+                    </li>
+                    <li class="desktop--subnav">
+                        <button class="desktop--subnav__btn ">فیلم</button>
+                        <div class="desktop--subnav__content  site-container">
+                            <a>فیلم</a>
+                            <a>دکتر سلام</a>
+                            <a>صوت</a>
+                            <a>مستند</a>
+                        </div>
+                    </li>
+                    <li class="desktop--subnav">
+                        <button class="desktop--subnav__btn ">برنامه ها</button>
+                        <div class="desktop--subnav__content  site-container">
+                            <a>دادستان</a>
+                            <a>راه روشن</a>
+                            <a>گرا</a>
+                            <a>بیت مقدس</a>
+                            <a>مدار</a>
+                            <a>سوت پایان</a>
+                            <a>شاخص</a>
+                            <a>اصل ۳۱</a>
+                            <a>پرونده تاریخ</a>
+                            <a>۱۶ آذر</a>
+                            <a>میز نقد</a>
+                            <a>بهارستان ۱۲</a>
+                        </div>
+                    </li>
+                    <li class="desktop--subnav__background"></li>
+                </ul>
+                <a class="desktop--nav__tv-link"><img src="images/snn_TV.png"></a>
+            </div>
+        </nav>
+    </section>
+</header>
 </body>
 </html>
