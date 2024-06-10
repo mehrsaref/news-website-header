@@ -131,6 +131,9 @@ body{
                         align-content: center;
                         width: 35px;
                         height: 35px;
+                        i{
+                            font-size: 18px
+                        }
                     }
                 }
                 .mobile--nav__social--links{
@@ -143,6 +146,10 @@ body{
                         text-align: center;
                         width: 16%;
                         margin: 10px 0;
+                        i{
+                            font-size: 35px;
+                            color: #fff;
+                        }
                     }
                 }
                 .mobile--nav__list{
@@ -158,6 +165,14 @@ body{
                             font-size: 17px;
                             color: #fff;
                             padding: 0 15px;
+                            i{
+                                color: #fff;
+                                font-size: 24px;
+                                font-weight: 700;
+                            }
+                            .subnav__angle--up{
+                                display: none;
+                            }
                         }
                         .mobile--subnav__content{
                             display: none;
@@ -173,10 +188,10 @@ body{
                         .mobile--subnav__item:checked ~ .mobile--subnav__content{
                             display: block;
                         }
-                        .mobile--subnav__item:checked +label .subnav-down-icon{
+                        .mobile--subnav__item:checked +label .subnav__angle--down{
                             display: none;
                         }
-                        .mobile--subnav__item:checked +label .subnav-up-icon{
+                        .mobile--subnav__item:checked +label .subnav__angle--up{
                             display: block !important;
                         }
                     }
